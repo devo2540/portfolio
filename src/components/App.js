@@ -1,20 +1,13 @@
-import React, { useEffect } from 'react'
-import { flamelinkApp } from '../flamelink/index'
+import React from 'react'
+import Maintenance from './Maintenance'
 
 const App = () => {
-  const fetchFlameLinkData = async () => {
-    const homepageData = await flamelinkApp.content.get({ schemaKey: 'homepage' })
-    console.log(homepageData)
-  }
-  
-  useEffect(() => {
-    console.log('App Loaded')
-    fetchFlameLinkData()
-  })
 
-  return ( 
-    <div>I'm the App!</div>
-   );
+  return (
+    <div className="App">
+      <Maintenance />
+    </div>
+  );
 }
  
 export default App;

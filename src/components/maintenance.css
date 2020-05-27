@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all .2s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.2);
+}
+
+a[name="twitter"]:hover {
+  color: #1DA1F2;
+}
+
+a[name="linkedin"]:hover {
+  color: #0072b1;
+}
+
+a[name="github"]:hover {
+  color: #ffd33d;
+}
